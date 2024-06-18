@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "72A2C861-9C8D-46EE-A2D4-95ED9018C2B3"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7CB2FF57-9418-4EF9-B532-DFF09C6395E5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/Utils/Network/SessionManager/SessionManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "313"
+            endingLineNumber = "313"
+            landmarkName = "sendRequest(url:httpMethod:timeout:numberOfRetries:message:body:skipLogs:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06191E6F-54F4-4942-A78E-3D9521F0BE43"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/Managers/AppleSignInManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "getAppleRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E5364D7-4D28-418C-9513-F47A3A771E21"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/Managers/AppleSignInManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getNonceInSha256()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5EE9215F-003A-4B70-A2BD-5830A96C4D60"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/UI/Auth/Login/AuthViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "getAppleRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "557AA0B8-2A42-458B-99EC-2734D95E7C5A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/UI/Auth/Login/AuthViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "getGIDConfiguration()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECCFDF81-8B71-4980-AF8C-AA8C0A36B28B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/UI/Auth/Login/AuthViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "signInToFirebase(with:user:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63F6705D-F1B0-4F44-B562-3841D9C42E7D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/Repositories/AuthRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "signIn(with:user:loginMethod:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "63F6705D-F1B0-4F44-B562-3841D9C42E7D - 46edf244f36075f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NCW_sandbox.AuthRepository.signIn(with: Swift.Optional&lt;NCW_sandbox.FirebaseAuthDelegate&gt;, user: Swift.String, loginMethod: NCW_sandbox.LoginMethod) async -&gt; Swift.Optional&lt;NCW_sandbox.AuthUser&gt;"
+                  moduleName = "NCW-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yy/Downloads/ncw-ios-demo/Fireblocks/Repositories/AuthRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29">
+               </Location>
+               <Location
+                  uuid = "63F6705D-F1B0-4F44-B562-3841D9C42E7D - 4b945b77b1869399"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) await resume partial function for NCW_sandbox.AuthRepository.signIn(with: Swift.Optional&lt;NCW_sandbox.FirebaseAuthDelegate&gt;, user: Swift.String, loginMethod: NCW_sandbox.LoginMethod) async -&gt; Swift.Optional&lt;NCW_sandbox.AuthUser&gt;"
+                  moduleName = "NCW-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yy/Downloads/ncw-ios-demo/Fireblocks/Repositories/AuthRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "192B92D8-A00B-4571-9381-C5470F634876"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/UI/Auth/Login/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
+            landmarkName = "authorizationController(controller:didCompleteWithAuthorization:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D0D8126-2D1A-4787-B92E-C88E8BC8DAA7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/Repositories/AuthRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "isSignInToFirebaseSucceed(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6D0D8126-2D1A-4787-B92E-C88E8BC8DAA7 - 78df6905ab223832"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for NCW_sandbox.AuthRepository.isSignInToFirebaseSucceed(with: Swift.Optional&lt;NCW_sandbox.FirebaseAuthDelegate&gt;) async -&gt; Swift.Bool"
+                  moduleName = "NCW-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yy/Downloads/ncw-ios-demo/Fireblocks/Repositories/AuthRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42">
+               </Location>
+               <Location
+                  uuid = "6D0D8126-2D1A-4787-B92E-C88E8BC8DAA7 - a92933a903d06c85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for NCW_sandbox.AuthRepository.isSignInToFirebaseSucceed(with: Swift.Optional&lt;NCW_sandbox.FirebaseAuthDelegate&gt;) async -&gt; Swift.Bool"
+                  moduleName = "NCW-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yy/Downloads/ncw-ios-demo/Fireblocks/Repositories/AuthRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42">
+               </Location>
+               <Location
+                  uuid = "6D0D8126-2D1A-4787-B92E-C88E8BC8DAA7 - cb9208872ac1719d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for NCW_sandbox.AuthRepository.isSignInToFirebaseSucceed(with: Swift.Optional&lt;NCW_sandbox.FirebaseAuthDelegate&gt;) async -&gt; Swift.Bool"
+                  moduleName = "NCW-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yy/Downloads/ncw-ios-demo/Fireblocks/Repositories/AuthRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37">
+               </Location>
+               <Location
+                  uuid = "6D0D8126-2D1A-4787-B92E-C88E8BC8DAA7 - cb9208872ac17e30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for NCW_sandbox.AuthRepository.isSignInToFirebaseSucceed(with: Swift.Optional&lt;NCW_sandbox.FirebaseAuthDelegate&gt;) async -&gt; Swift.Bool"
+                  moduleName = "NCW-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yy/Downloads/ncw-ios-demo/Fireblocks/Repositories/AuthRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42">
+               </Location>
+               <Location
+                  uuid = "6D0D8126-2D1A-4787-B92E-C88E8BC8DAA7 - 92f798c9ea5e109c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for NCW_sandbox.AuthRepository.isSignInToFirebaseSucceed(with: Swift.Optional&lt;NCW_sandbox.FirebaseAuthDelegate&gt;) async -&gt; Swift.Bool"
+                  moduleName = "NCW-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yy/Downloads/ncw-ios-demo/Fireblocks/Repositories/AuthRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37">
+               </Location>
+               <Location
+                  uuid = "6D0D8126-2D1A-4787-B92E-C88E8BC8DAA7 - 92f798c9ea5e1f31"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for NCW_sandbox.AuthRepository.isSignInToFirebaseSucceed(with: Swift.Optional&lt;NCW_sandbox.FirebaseAuthDelegate&gt;) async -&gt; Swift.Bool"
+                  moduleName = "NCW-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yy/Downloads/ncw-ios-demo/Fireblocks/Repositories/AuthRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C883B03-FC4C-4D25-8EA9-B10010543029"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/Repositories/AuthRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "isSignInToFirebaseSucceed(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA9CDACF-6178-4091-855E-FC5618872594"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/Repositories/AuthRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "isSignInToFirebaseSucceed(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F699A941-F119-4E2F-B01F-BF7E3C44D305"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Library/Developer/Xcode/DerivedData/Fireblocks-cuiuvnbfbiiolsdcdxilyranhyyn/SourcePackages/checkouts/firebase-ios-sdk/FirebaseAuth/Sources/Auth/FIRAuth.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1040"
+            endingLineNumber = "1040"
+            landmarkName = "-internalSignInAndRetrieveDataWithCredential:isReauthentication:callback:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4510C526-1FC2-4EE3-8743-A6694332F2ED"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Library/Developer/Xcode/DerivedData/Fireblocks-cuiuvnbfbiiolsdcdxilyranhyyn/SourcePackages/checkouts/firebase-ios-sdk/FirebaseAuth/Sources/Auth/FIRAuth.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1020"
+            endingLineNumber = "1020"
+            landmarkName = "-internalSignInAndRetrieveDataWithCredential:isReauthentication:callback:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5386D8B5-D0B6-4681-91B5-333241D09951"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Library/Developer/Xcode/DerivedData/Fireblocks-cuiuvnbfbiiolsdcdxilyranhyyn/SourcePackages/checkouts/firebase-ios-sdk/FirebaseAuth/Sources/Auth/FIRAuth.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1015"
+            endingLineNumber = "1015"
+            landmarkName = "-internalSignInAndRetrieveDataWithCredential:isReauthentication:callback:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2680F44F-E516-4E15-8FDF-395B2CFB9170"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/Managers/FireblocksManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "takeOver()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60DF4EDF-D042-4D0F-8865-A9EB93C487F6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/UI/Settings/Takeover/TakeoverViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "getTakeoverFullKeys()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "60DF4EDF-D042-4D0F-8865-A9EB93C487F6 - d89fa5ab7e912db3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in NCW_sandbox.TakeoverViewModel.getTakeoverFullKeys() -&gt; ()"
+                  moduleName = "NCW-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yy/Downloads/ncw-ios-demo/Fireblocks/UI/Settings/Takeover/TakeoverViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20">
+               </Location>
+               <Location
+                  uuid = "60DF4EDF-D042-4D0F-8865-A9EB93C487F6 - c316a06a790dcfac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in NCW_sandbox.TakeoverViewModel.getTakeoverFullKeys() -&gt; ()"
+                  moduleName = "NCW-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yy/Downloads/ncw-ios-demo/Fireblocks/UI/Settings/Takeover/TakeoverViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20">
+               </Location>
+               <Location
+                  uuid = "60DF4EDF-D042-4D0F-8865-A9EB93C487F6 - 69248524ffb4ebb5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in NCW_sandbox.TakeoverViewModel.getTakeoverFullKeys() -&gt; ()"
+                  moduleName = "NCW-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yy/Downloads/ncw-ios-demo/Fireblocks/UI/Settings/Takeover/TakeoverViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C185FC0-9295-43CA-A4D4-C28CFFC0921F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/UI/Settings/Takeover/DeriveKeys/DeriveKeysHostingVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "init(privateKey:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B089753A-3987-46A8-9238-D42E5EEE2F49"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/UI/Settings/Takeover/DeriveKeys/DeriveKeysViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "init(privateKey:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD9FF155-B053-4459-8843-F765BD8D0D17"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/Repositories/AuthRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "signIn(userToken:email:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "26E346CE-F81B-44D0-BE2E-59EC28299F18"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/Repositories/AuthRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "signIn(userToken:email:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A20F626D-40B5-44B2-91DB-FF7E2F385FD3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/Repositories/AuthRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "signIn(userToken:email:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3489C29-2B01-44B7-8F91-4EAF2D5E8210"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/Repositories/AuthRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "signIn(userToken:email:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A3489C29-2B01-44B7-8F91-4EAF2D5E8210 - 4e0a469bfe9d12fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for NCW_sandbox.AuthRepository.signIn(userToken: Swift.String, email: Swift.String) async throws -&gt; Swift.Optional&lt;NCW_sandbox.AuthUser&gt;"
+                  moduleName = "NCW-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yy/Downloads/ncw-ios-demo/Fireblocks/Repositories/AuthRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101">
+               </Location>
+               <Location
+                  uuid = "A3489C29-2B01-44B7-8F91-4EAF2D5E8210 - b0799ac2fd6976dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) await resume partial function for NCW_sandbox.AuthRepository.signIn(userToken: Swift.String, email: Swift.String) async throws -&gt; Swift.Optional&lt;NCW_sandbox.AuthUser&gt;"
+                  moduleName = "NCW-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yy/Downloads/ncw-ios-demo/Fireblocks/Repositories/AuthRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101">
+               </Location>
+               <Location
+                  uuid = "A3489C29-2B01-44B7-8F91-4EAF2D5E8210 - 960770d5b0a476f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for NCW_sandbox.AuthRepository.signIn(userToken: Swift.String, email: Swift.String) async throws -&gt; Swift.Optional&lt;NCW_sandbox.AuthUser&gt;"
+                  moduleName = "NCW-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yy/Downloads/ncw-ios-demo/Fireblocks/Repositories/AuthRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101">
+               </Location>
+               <Location
+                  uuid = "A3489C29-2B01-44B7-8F91-4EAF2D5E8210 - 355960120f12a65c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) suspend resume partial function for NCW_sandbox.AuthRepository.signIn(userToken: Swift.String, email: Swift.String) async throws -&gt; Swift.Optional&lt;NCW_sandbox.AuthUser&gt;"
+                  moduleName = "NCW-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yy/Downloads/ncw-ios-demo/Fireblocks/Repositories/AuthRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100">
+               </Location>
+               <Location
+                  uuid = "A3489C29-2B01-44B7-8F91-4EAF2D5E8210 - 355960120f1299bb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) suspend resume partial function for NCW_sandbox.AuthRepository.signIn(userToken: Swift.String, email: Swift.String) async throws -&gt; Swift.Optional&lt;NCW_sandbox.AuthUser&gt;"
+                  moduleName = "NCW-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yy/Downloads/ncw-ios-demo/Fireblocks/Repositories/AuthRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "333B874F-3D7F-464E-B004-75F489680DDE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/Utils/Network/SessionManager/SessionManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "398"
+            endingLineNumber = "398"
+            landmarkName = "getDevices()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29AED7EB-C326-4491-9D94-A74A45D903C8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fireblocks/Utils/Network/SessionManager/SessionManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "397"
+            endingLineNumber = "397"
+            landmarkName = "getDevices()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

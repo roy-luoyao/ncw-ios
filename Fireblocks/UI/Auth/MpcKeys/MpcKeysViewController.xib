@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MpcKeysViewController" customModule="NCW_sandbox" customModuleProvider="target">
+            <connections>
+                <outlet property="footerButton" destination="f98-vB-FfQ" id="uax-rQ-Rgq"/>
+                <outlet property="footerButtonHC" destination="iB0-nk-3hX" id="lWf-JP-Whl"/>
+                <outlet property="footerButtonTC" destination="hZx-2s-CRu" id="Lry-fi-99i"/>
+                <outlet property="generateMpcKeysButton" destination="Baj-jD-1Wp" id="r9s-sP-YRW"/>
+                <outlet property="headerImageView" destination="jZS-jl-4ug" id="3ZS-yO-0QV"/>
+                <outlet property="headerLabel" destination="Ldb-vK-Rhq" id="UPe-gi-POI"/>
+                <outlet property="view" destination="Vvz-P8-BJg" id="g1c-1d-Mla"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Vvz-P8-BJg">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="generate_key_image" translatesAutoresizingMaskIntoConstraints="NO" id="jZS-jl-4ug">
+                    <rect key="frame" x="156.66666666666666" y="89" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="EGQ-Xd-E3h"/>
+                        <constraint firstAttribute="height" constant="80" id="aGa-bs-IRP"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Baj-jD-1Wp" userLabel="generateMpcKeysButton" customClass="AppActionBotton" customModule="NCW_sandbox" customModuleProvider="target">
+                    <rect key="frame" x="16" y="686" width="361" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ZSV-VN-BM7"/>
+                    </constraints>
+                    <connections>
+                        <action selector="generateMpcKey:" destination="-1" eventType="touchUpInside" id="bqC-KE-TVR"/>
+                    </connections>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f98-vB-FfQ" userLabel="backupLaterButton" customClass="AppActionBotton" customModule="NCW_sandbox" customModuleProvider="target">
+                    <rect key="frame" x="16" y="744" width="361" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="iB0-nk-3hX"/>
+                    </constraints>
+                    <connections>
+                        <action selector="didTapIllDoItLater:" destination="-1" eventType="touchUpInside" id="bRc-H5-JiY"/>
+                    </connections>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldb-vK-Rhq">
+                    <rect key="frame" x="48" y="193" width="297" height="94"/>
+                    <string key="text">To provide the highest level of wallet security, we use multi-party computation (MPC) keys. MPCs allow for different parties to hold a piece of a private key without possessing the entire thing. </string>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="lyA-dQ-sdK"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="lyA-dQ-sdK" firstAttribute="trailing" secondItem="Baj-jD-1Wp" secondAttribute="trailing" constant="16" id="DZU-Cz-led"/>
+                <constraint firstItem="Ldb-vK-Rhq" firstAttribute="top" secondItem="jZS-jl-4ug" secondAttribute="bottom" constant="24" id="FAv-N7-DbM"/>
+                <constraint firstItem="jZS-jl-4ug" firstAttribute="top" secondItem="lyA-dQ-sdK" secondAttribute="top" constant="30" id="IDB-In-OP7"/>
+                <constraint firstItem="jZS-jl-4ug" firstAttribute="centerX" secondItem="Vvz-P8-BJg" secondAttribute="centerX" id="JaT-fm-NJ2"/>
+                <constraint firstItem="lyA-dQ-sdK" firstAttribute="bottom" secondItem="f98-vB-FfQ" secondAttribute="bottom" constant="24" id="Jk7-Tb-DO0"/>
+                <constraint firstItem="f98-vB-FfQ" firstAttribute="leading" secondItem="Baj-jD-1Wp" secondAttribute="leading" id="VP6-xi-dtb"/>
+                <constraint firstItem="Baj-jD-1Wp" firstAttribute="leading" secondItem="lyA-dQ-sdK" secondAttribute="leading" constant="16" id="VsG-4e-oRB"/>
+                <constraint firstAttribute="trailing" secondItem="Ldb-vK-Rhq" secondAttribute="trailing" constant="48" id="ehZ-9v-zQw"/>
+                <constraint firstItem="f98-vB-FfQ" firstAttribute="top" secondItem="Baj-jD-1Wp" secondAttribute="bottom" constant="8" id="hZx-2s-CRu"/>
+                <constraint firstItem="Ldb-vK-Rhq" firstAttribute="leading" secondItem="lyA-dQ-sdK" secondAttribute="leading" constant="48" id="p2D-13-Z3w"/>
+                <constraint firstItem="f98-vB-FfQ" firstAttribute="trailing" secondItem="Baj-jD-1Wp" secondAttribute="trailing" id="zlm-hb-zrZ"/>
+            </constraints>
+            <point key="canvasLocation" x="142.74809160305344" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="generate_key_image" width="80" height="80"/>
+    </resources>
+</document>

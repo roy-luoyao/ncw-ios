@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>top-level-items</key>
+	<array>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>57</string>
+					<key>EndingLineNumber</key>
+					<string>387</string>
+					<key>StartingColumnNumber</key>
+					<string>54</string>
+					<key>StartingLineNumber</key>
+					<string>387</string>
+					<key>Timestamp</key>
+					<string>734407056.3348089</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>Fireblocks/Utils/Network/SessionManager/SessionManager.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>url</string>
+				<key>leading</key>
+				<string>    func login() async throws -&gt; String? {
+        if let url = URL(string: FBURL.login.url) {
+            return String(data: try await sendRequest(</string>
+				<key>trailing</key>
+				<string>: url, numberOfRetries: 5), encoding: .utf8)
+        } else {
+            throw SessionManager.error
+</string>
+			</dict>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>45</string>
+					<key>EndingLineNumber</key>
+					<string>396</string>
+					<key>StartingColumnNumber</key>
+					<string>45</string>
+					<key>StartingLineNumber</key>
+					<string>396</string>
+					<key>Timestamp</key>
+					<string>734407086.606921</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>Fireblocks/Utils/Network/SessionManager/SessionManager.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string></string>
+				<key>leading</key>
+				<string>        if let url = URL(string: FBURL.devices.url) {
+            let data = try await sendRequest(url: url, httpMethod: "GET", numberOfRetries: 5)
+            let value = try JSONDecoder().dec</string>
+				<key>trailing</key>
+				<string>ode(GetDevicesResponse.self, from: data)
+            return value
+        } else {
+</string>
+			</dict>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>35</string>
+					<key>EndingLineNumber</key>
+					<string>28</string>
+					<key>StartingColumnNumber</key>
+					<string>19</string>
+					<key>StartingLineNumber</key>
+					<string>28</string>
+					<key>Timestamp</key>
+					<string>734409660.6559449</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>Fireblocks/Repositories/AuthRepository.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>SignInToFirebase</string>
+				<key>leading</key>
+				<string>    
+    func signIn(with result: FirebaseAuthDelegate?, user: String, loginMethod: LoginMethod) async -&gt; AuthUser? {
+        if await is</string>
+				<key>trailing</key>
+				<string>Succeed(with: result) {
+            return await getAuthUserFromServer(user: user, loginMethod: loginMethod)
+        } else {
+</string>
+			</dict>
+			<key>title</key>
+			<string>Find Result:         if await isSignInToFirebaseSucceed(with: result) {</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>62</string>
+					<key>EndingLineNumber</key>
+					<string>312</string>
+					<key>StartingColumnNumber</key>
+					<string>61</string>
+					<key>StartingLineNumber</key>
+					<string>312</string>
+					<key>Timestamp</key>
+					<string>735039578.110721</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>Fireblocks/Utils/Network/SessionManager/SessionManager.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>.</string>
+				<key>leading</key>
+				<string>    
+    func sendRequest(url: URL, httpMethod: String = "POST", timeout: TimeInterval? = nil, numberOfRetries: Int = 2, message: String? = nil, body: Any? = nil, skipLogs: Bool = false) async throws -&gt; (Data) {
+        let currentAccessToken: String = await AuthRepository</string>
+				<key>trailing</key>
+				<string>getUserIdToken()
+        var request = URLRequest(url: url)
+        request.setValue(
+</string>
+			</dict>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+	</array>
+</dict>
+</plist>
