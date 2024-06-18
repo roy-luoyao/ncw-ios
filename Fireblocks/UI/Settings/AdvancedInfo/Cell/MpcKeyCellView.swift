@@ -23,11 +23,10 @@ class MpcKeyCellView: UICollectionViewCell {
     }
     
     private func setKeyData(_ mpcKey: KeyDescriptor) {
-        keyIdLabel.text     = mpcKey.keyId.isEmpty ? "-" : mpcKey.keyId
-        statusLabel.text    = mpcKey.keyStatus.rawValue.lowercased().capitalized()
-        algorithmLabel.text = mpcKey.algorithm.rawValue
-    }
-    
+         keyIdLabel.text     = mpcKey.keyId == nil ? "-" : mpcKey.keyId!.isEmpty ? "-" : mpcKey.keyId
+         statusLabel.text    = mpcKey.keyStatus?.rawValue.lowercased().capitalized() ?? ""
+         algorithmLabel.text = mpcKey.algorithm?.rawValue ?? ""
+     }
     private func initStatusBackgroundView(isHidden: Bool) {
         statusBackgroundView.isHidden           = isHidden
         statusBackgroundView.layer.borderColor  = AssetsColors.success.getColor().cgColor

@@ -149,7 +149,7 @@ class FireblocksManager {
         var keysSet: Set<String> = []
         let allKeys = getMpcKeys()
         for mpcKey in allKeys {
-            keysSet.insert(mpcKey.keyId)
+            keysSet.insert(mpcKey.keyId ?? "")
         }
             
         return nil
