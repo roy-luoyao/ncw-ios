@@ -1,5 +1,5 @@
 {
-  "originHash" : "005e946f930879298a63a178d73b47999f71a4803e7b61268b5466e158cabe02",
+  "originHash" : "d442678246ef33bb66fdac2caf6d1bad8af3324dc306450691c072f173548b18",
   "pins" : [
     {
       "identity" : "google-api-objectivec-client-for-rest",
@@ -26,15 +26,6 @@
       "state" : {
         "revision" : "bcb52371f2259254bac6690f92bb474a61768c47",
         "version" : "5.1.1"
-      }
-    },
-    {
-      "identity" : "sdwebimage",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SDWebImage/SDWebImage",
-      "state" : {
-        "revision" : "36e484b317522667a4b2de9b50daaa01dfa30809",
-        "version" : "5.18.0"
       }
     }
   ],
