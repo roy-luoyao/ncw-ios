@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import NVActivityIndicatorView
 import SwiftUI
 
 class AssetListViewController: UIViewController {
@@ -14,8 +13,8 @@ class AssetListViewController: UIViewController {
     private let headerHeight: CGFloat = 240
     
     //MARK: - PROPERTIES
-    @IBOutlet weak var activityIndicator: NVActivityIndicatorView!
-    @IBOutlet weak var refreshIndicator: NVActivityIndicatorView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var refreshIndicator: UIActivityIndicatorView!
     @IBOutlet weak var settingButton: UIButton!
     @IBOutlet weak var errorMessage: UILabel!
     @IBOutlet weak var errorView: UIView!
@@ -63,13 +62,13 @@ class AssetListViewController: UIViewController {
         tableView.refreshControl?.addSubview(refreshIndicator)
 
         tableView.refreshControl?.addTarget(self, action: #selector(refreshAssets), for: .valueChanged)
-        refreshIndicator.type = .circleStrokeSpin
+        refreshIndicator.style = .large
         refreshIndicator.color = AssetsColors.primaryBlue.getColor()
 
     }
     
     private func configureView(){
-        activityIndicator.type = .circleStrokeSpin
+        refreshIndicator.style = .large
         activityIndicator.color = AssetsColors.primaryBlue.getColor()
     }
     

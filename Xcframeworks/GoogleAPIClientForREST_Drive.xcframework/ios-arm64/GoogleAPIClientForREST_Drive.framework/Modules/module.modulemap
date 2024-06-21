@@ -1,0 +1,6 @@
+framework module GoogleAPIClientForREST_Drive {
+  umbrella header "GoogleAPIClientForREST_Drive.h"
+  export *
+
+  module * { export * }
+}

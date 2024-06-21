@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1B09DBE12C2406780057C054 /* SDWebImage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B09DBE02C2406780057C054 /* SDWebImage.xcframework */; };
-		1B2BEBEE2C23C96600D76069 /* GoogleAPIClientForRESTCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1B2BEBED2C23C96600D76069 /* GoogleAPIClientForRESTCore */; };
-		1B2BEBF02C23C96600D76069 /* GoogleAPIClientForREST_Drive in Frameworks */ = {isa = PBXBuildFile; productRef = 1B2BEBEF2C23C96600D76069 /* GoogleAPIClientForREST_Drive */; };
+		1B481B4A2C2522FC00B00608 /* GoogleAPIClientForREST_Drive.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B481B492C2522FB00B00608 /* GoogleAPIClientForREST_Drive.xcframework */; };
 		1BDF4E3D2C182DB400FF5E8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BDF4E3C2C182DB400FF5E8C /* GoogleService-Info.plist */; };
+		1BE40CC12C242E3B0072B520 /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE40CC02C242E3B0072B520 /* GTMSessionFetcher.xcframework */; };
 		1BEACD8D2C23F1B200A2B47E /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEACD712C23F1B200A2B47E /* AppAuth.xcframework */; };
 		1BEACD8E2C23F1B200A2B47E /* GoogleSignIn.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEACD722C23F1B200A2B47E /* GoogleSignIn.xcframework */; };
 		1BEACD8F2C23F1B200A2B47E /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEACD732C23F1B200A2B47E /* GTMAppAuth.xcframework */; };
@@ -196,8 +196,6 @@
 		86E4A1682A6852CE00A2861D /* TakeoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E4A1652A6852CE00A2861D /* TakeoverViewController.swift */; };
 		86E4A1692A6852CE00A2861D /* TakeoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86E4A1662A6852CE00A2861D /* TakeoverViewController.xib */; };
 		86E8350D2A602D50003E98BE /* EnvironmentConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E8350C2A602D50003E98BE /* EnvironmentConstants.swift */; };
-		86E835182A60331B003E98BE /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 86E835172A60331B003E98BE /* NVActivityIndicatorView */; };
-		86E8351A2A60331B003E98BE /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = 86E835192A60331B003E98BE /* NVActivityIndicatorViewExtended */; };
 		86EB51322A66C08C00D2911A /* SettingsOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EB51292A66C08C00D2911A /* SettingsOptionButton.swift */; };
 		86EB51332A66C08C00D2911A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EB512A2A66C08C00D2911A /* SettingsViewController.swift */; };
 		86EB51342A66C08C00D2911A /* BackupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86EB512C2A66C08C00D2911A /* BackupViewController.xib */; };
@@ -226,7 +224,9 @@
 
 /* Begin PBXFileReference section */
 		1B09DBE02C2406780057C054 /* SDWebImage.xcframework */ = {isa = PBXFileReference; expectedSignature = "SelfSigned:FC3B101386344C50DB702A9AD1016FB51A3ECC8B9DA9B7AE47A048D4D0633983"; lastKnownFileType = wrapper.xcframework; path = SDWebImage.xcframework; sourceTree = "<group>"; };
+		1B481B492C2522FB00B00608 /* GoogleAPIClientForREST_Drive.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleAPIClientForREST_Drive.xcframework; sourceTree = "<group>"; };
 		1BDF4E3C2C182DB400FF5E8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1BE40CC02C242E3B0072B520 /* GTMSessionFetcher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GTMSessionFetcher.xcframework; sourceTree = "<group>"; };
 		1BEACD712C23F1B200A2B47E /* AppAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AppAuth.xcframework; sourceTree = "<group>"; };
 		1BEACD722C23F1B200A2B47E /* GoogleSignIn.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleSignIn.xcframework; sourceTree = "<group>"; };
 		1BEACD732C23F1B200A2B47E /* GTMAppAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GTMAppAuth.xcframework; sourceTree = "<group>"; };
@@ -440,23 +440,21 @@
 			files = (
 				1BEACD9D2C23F1B200A2B47E /* GoogleUtilities.xcframework in Frameworks */,
 				1BEACD922C23F1B200A2B47E /* FBLPromises.xcframework in Frameworks */,
-				1B2BEBEE2C23C96600D76069 /* GoogleAPIClientForRESTCore in Frameworks */,
 				1BEACD942C23F1B200A2B47E /* FirebaseAppCheckInterop.xcframework in Frameworks */,
 				1BEACD932C23F1B200A2B47E /* FirebaseABTesting.xcframework in Frameworks */,
 				86AF7C4D2A430BF70026DF15 /* (null) in Frameworks */,
 				1BEACD982C23F1B200A2B47E /* FirebaseInstallations.xcframework in Frameworks */,
 				1BEACD8D2C23F1B200A2B47E /* AppAuth.xcframework in Frameworks */,
 				1BEACD9E2C23F1B200A2B47E /* grpc.xcframework in Frameworks */,
-				1B2BEBF02C23C96600D76069 /* GoogleAPIClientForREST_Drive in Frameworks */,
 				1BEACD9F2C23F1B200A2B47E /* leveldb.xcframework in Frameworks */,
 				1B09DBE12C2406780057C054 /* SDWebImage.xcframework in Frameworks */,
 				1BEACD8F2C23F1B200A2B47E /* GTMAppAuth.xcframework in Frameworks */,
 				1BEACD9B2C23F1B200A2B47E /* FirebaseSharedSwift.xcframework in Frameworks */,
-				86E8351A2A60331B003E98BE /* NVActivityIndicatorViewExtended in Frameworks */,
+				1B481B4A2C2522FC00B00608 /* GoogleAPIClientForREST_Drive.xcframework in Frameworks */,
 				86C127FB2A53087B00255757 /* (null) in Frameworks */,
-				86E835182A60331B003E98BE /* NVActivityIndicatorView in Frameworks */,
 				1BEACD952C23F1B200A2B47E /* FirebaseAuth.xcframework in Frameworks */,
 				1BEACD9A2C23F1B200A2B47E /* FirebaseRemoteConfigInterop.xcframework in Frameworks */,
+				1BE40CC12C242E3B0072B520 /* GTMSessionFetcher.xcframework in Frameworks */,
 				1BEACDA22C23F1B200A2B47E /* RecaptchaInterop.xcframework in Frameworks */,
 				1BEACD962C23F1B200A2B47E /* FirebaseCore.xcframework in Frameworks */,
 				1BEACDA12C23F1B200A2B47E /* Promises.xcframework in Frameworks */,
@@ -477,6 +475,8 @@
 		1BEACD8C2C23F1B200A2B47E /* Xcframeworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B481B492C2522FB00B00608 /* GoogleAPIClientForREST_Drive.xcframework */,
+				1BE40CC02C242E3B0072B520 /* GTMSessionFetcher.xcframework */,
 				1BEACD722C23F1B200A2B47E /* GoogleSignIn.xcframework */,
 				1BEACD732C23F1B200A2B47E /* GTMAppAuth.xcframework */,
 				1BEACD712C23F1B200A2B47E /* AppAuth.xcframework */,
@@ -1280,10 +1280,6 @@
 			);
 			name = "NCW-sandbox";
 			packageProductDependencies = (
-				86E835172A60331B003E98BE /* NVActivityIndicatorView */,
-				86E835192A60331B003E98BE /* NVActivityIndicatorViewExtended */,
-				1B2BEBED2C23C96600D76069 /* GoogleAPIClientForRESTCore */,
-				1B2BEBEF2C23C96600D76069 /* GoogleAPIClientForREST_Drive */,
 			);
 			productName = Fireblocks;
 			productReference = 86859F4F2A384D8A0056E3C6 /* NCW-sandbox.app */;
@@ -1314,8 +1310,6 @@
 			);
 			mainGroup = 86859F462A384D8A0056E3C6;
 			packageReferences = (
-				86E835162A60331B003E98BE /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
-				1B2BEBEC2C23C96600D76069 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */,
 			);
 			productRefGroup = 86859F502A384D8A0056E3C6 /* Products */;
 			projectDirPath = "";
@@ -1694,6 +1688,10 @@
 					"$(inherited)",
 					"@executable_path/Xcframeworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Xcframeworks",
+				);
 				MARKETING_VERSION = 2.3.6;
 				OTHER_SWIFT_FLAGS = "-DEC2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fireblocks.ncw;
@@ -1738,6 +1736,10 @@
 					"$(inherited)",
 					"@executable_path/Xcframeworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Xcframeworks",
+				);
 				MARKETING_VERSION = 2.3.6;
 				OTHER_SWIFT_FLAGS = "-DEC2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fireblocks.ncw;
@@ -1774,48 +1776,6 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		1B2BEBEC2C23C96600D76069 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/google/google-api-objectivec-client-for-rest";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		86E835162A60331B003E98BE /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		1B2BEBED2C23C96600D76069 /* GoogleAPIClientForRESTCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1B2BEBEC2C23C96600D76069 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
-			productName = GoogleAPIClientForRESTCore;
-		};
-		1B2BEBEF2C23C96600D76069 /* GoogleAPIClientForREST_Drive */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1B2BEBEC2C23C96600D76069 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
-			productName = GoogleAPIClientForREST_Drive;
-		};
-		86E835172A60331B003E98BE /* NVActivityIndicatorView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 86E835162A60331B003E98BE /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
-			productName = NVActivityIndicatorView;
-		};
-		86E835192A60331B003E98BE /* NVActivityIndicatorViewExtended */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 86E835162A60331B003E98BE /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
-			productName = NVActivityIndicatorViewExtended;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 86859F472A384D8A0056E3C6 /* Project object */;
 }

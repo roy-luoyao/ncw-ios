@@ -6,20 +6,20 @@
 //
 
 import UIKit
-import NVActivityIndicatorView
 
 class ActivityIndicator {
     
     static let shared = ActivityIndicator()
     private static let activityIndicatorSize: CGFloat = 60
     
-    private var activityIndicator = NVActivityIndicatorView(
-        frame: CGRect(x: 0, y: 0, width: activityIndicatorSize, height: activityIndicatorSize),
-        type: .circleStrokeSpin,
-        color: AssetsColors.primaryBlue.getColor(),
-        padding: nil
-    )
-    
+    private var activityIndicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView(style: .large) // 选择较大的样式
+        indicator.color = AssetsColors.primaryBlue.getColor()
+        indicator.hidesWhenStopped = true
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        return indicator
+    }()
+
     private var titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = AssetsColors.white.getColor()
