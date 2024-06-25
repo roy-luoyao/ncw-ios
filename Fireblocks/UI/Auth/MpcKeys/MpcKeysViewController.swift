@@ -119,7 +119,7 @@ class MpcKeysViewController: UIViewController {
     @IBAction func navigateToRecoverWallet(_ sender: UIButton){
         if !viewModel.didSucceedGenerateKeys {
             let vc = BackupViewController()
-            vc.actionType = Recover(delegate: vc.self)
+//            vc.actionType = Recover(delegate: vc.self)
             navigationController?.pushViewController(vc, animated: true)
         } else {
             self.navigateNextScreen()
@@ -153,8 +153,8 @@ extension MpcKeysViewController: MpcKeysViewModelDelegate {
     
     func navigateCreateBackupScreen() {
         let vc = BackupViewController()
-        vc.updateSourceView(didComeFromGenerateKeys: true)
-        vc.actionType = Backup(delegate: vc.self)
+//        vc.updateSourceView(didComeFromGenerateKeys: true)
+//        vc.actionType = Backup(delegate: vc.self)
         navigationController?.pushViewController(vc, animated: true)
     }
     

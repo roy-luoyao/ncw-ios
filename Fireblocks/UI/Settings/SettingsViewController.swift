@@ -148,13 +148,13 @@ class SettingsViewController: UIViewController {
             return
         }
         let vc = BackupViewController()
-        vc.actionType = Backup(delegate: vc.self)
+//        vc.actionType = Backup(delegate: vc.self)
         navigationController?.pushViewController(vc, animated: true)
     }
     
     private func navigateToRecoverViewController() {
         let vc = BackupViewController()
-        vc.actionType = Recover(delegate: vc.self)
+//        vc.actionType = Recover(delegate: vc.self)
         navigationController?.pushViewController(vc, animated: true)
     }
     

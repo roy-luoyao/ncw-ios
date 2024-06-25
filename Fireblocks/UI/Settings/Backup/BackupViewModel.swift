@@ -97,7 +97,8 @@ class BackupViewModel {
     }
     
     func getGidConfiguration() -> GIDConfiguration? {
-        return GoogleDriveManager().getGidConfiguration()
+//        return GoogleDriveManager().getGidConfiguration()
+        return nil
     }
     
     func getGoogleDriveScope() -> [String] {

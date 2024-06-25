@@ -45,7 +45,7 @@ extension RedirectNewUserHostingVC: RedirectNewUserDelegate {
     
     func recoverTapped() {
         let vc = BackupViewController()
-        vc.actionType = Recover(delegate: vc.self)
+//        vc.actionType = Recover(delegate: vc.self)
         navigationController?.pushViewController(vc, animated: true)
     }
 }

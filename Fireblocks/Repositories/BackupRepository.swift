@@ -26,18 +26,18 @@ final public class BackupRepository {
     // MARK: Backup
     
     func backupToGoogleDrive(gidUser: GIDGoogleUser, passphraseId: String) async -> Bool {
-        let passphrase = await GoogleDriveManager().recoverFromDrive(gidUser: gidUser, passphraseId: passphraseId) ?? FireblocksManager.shared.generatePassphrase()
-        let isSucceeded = await GoogleDriveManager().backupToDrive(gidUser: gidUser, passphrase: passphrase, passphraseId: passphraseId)
-        if isSucceeded {
-            do {
-                try await SessionManager.shared.createPassphraseInfo(passphraseInfo: PassphraseInfoBody(passphraseId: passphraseId, location: BackupProvider.GoogleDrive.rawValue))
-                return await backupKeys(passphrase: passphrase, passphraseId: passphraseId, backupProvider: .GoogleDrive)
-            } catch {
-                print("BackupRepository, backupToGoogleDrive: failed to create passphrase info \(error)")
-            }
-        }
-
-        print("BackupRepository, backupToGoogleDrive: failed to backup passphrase")
+//        let passphrase = await GoogleDriveManager().recoverFromDrive(gidUser: gidUser, passphraseId: passphraseId) ?? FireblocksManager.shared.generatePassphrase()
+//        let isSucceeded = await GoogleDriveManager().backupToDrive(gidUser: gidUser, passphrase: passphrase, passphraseId: passphraseId)
+//        if isSucceeded {
+//            do {
+//                try await SessionManager.shared.createPassphraseInfo(passphraseInfo: PassphraseInfoBody(passphraseId: passphraseId, location: BackupProvider.GoogleDrive.rawValue))
+//                return await backupKeys(passphrase: passphrase, passphraseId: passphraseId, backupProvider: .GoogleDrive)
+//            } catch {
+//                print("BackupRepository, backupToGoogleDrive: failed to create passphrase info \(error)")
+//            }
+//        }
+//
+//        print("BackupRepository, backupToGoogleDrive: failed to backup passphrase")
         return false
         
     }
@@ -76,7 +76,8 @@ final public class BackupRepository {
     // MARK: Recover
     
     func recoverFromGoogleDrive(gidUser: GIDGoogleUser, passphraseId: String) async -> String {
-        return await GoogleDriveManager().recoverFromDrive(gidUser: gidUser, passphraseId: passphraseId) ?? ""
+//        return await GoogleDriveManager().recoverFromDrive(gidUser: gidUser, passphraseId: passphraseId) ?? ""
+        return ""
     }
     
     func recoverFromICloud(container: CKContainer, passphraseId: String) async -> String {
