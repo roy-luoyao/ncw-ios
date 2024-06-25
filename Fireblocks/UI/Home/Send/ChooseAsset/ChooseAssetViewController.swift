@@ -59,7 +59,9 @@ extension ChooseAssetViewController: UITableViewDelegate, UITableViewDataSource 
         switch viewModel.chooseAssetFlowType {
         case .send:
             let vc = AmountToSendViewController(nibName: "AmountToSendViewController", bundle: nil)
-            vc.viewModel.asset = asset
+            var masset: Asset = asset
+            masset.rate = 1.0
+            vc.viewModel.asset = masset
             vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
         case .receive:
