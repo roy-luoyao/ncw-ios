@@ -1718,7 +1718,7 @@
 				);
 				MARKETING_VERSION = 2.3.6;
 				OTHER_SWIFT_FLAGS = "-DEC2";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fireblocks.ncw;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openharbour.lab.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
