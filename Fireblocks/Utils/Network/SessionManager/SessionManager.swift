@@ -221,7 +221,7 @@ class SessionManager: ObservableObject {
         var url: String {
             switch self {
             case .login:
-                return EnvironmentConstants.baseURL + "/api/login"
+                return EnvironmentConstants.baseURL + "/api/user/login"
             case .devices:
                 return EnvironmentConstants.baseURL + "/api/devices"
             case .assign(let deviceId):
@@ -326,13 +326,27 @@ class SessionManager: ObservableObject {
         }
         
         if httpMethod != "GET" {
-            var body = body
-            if let message {
-                body = ["message": message]
+            var nbody = body == nil ? ["sub": currentAccessToken] : body
+            var walletId = FireblocksManager.shared.getWalletId()
+            var deviceId = FireblocksManager.shared.getDeviceId()
+            if let bodyDict = nbody as? [String: Any] {
+                var newDict = bodyDict
+                newDict["sub"] = currentAccessToken
+                if let message {
+                    newDict["message"] = message
+                }
+                if walletId.count > 0 {
+                    newDict["walletId"] = walletId
+                }
+                if deviceId.count > 0 {
+                    newDict["deviceId"] = walletId
+                }
+                nbody = newDict
             }
-            if let body {
+            
+            if let nbody {
                 let bodyData = try? JSONSerialization.data(
-                    withJSONObject: body,
+                    withJSONObject: nbody,
                     options: []
                 )
                 request.httpBody = bodyData
