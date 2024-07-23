@@ -104,7 +104,6 @@ class FireblocksManager {
             let startDate = Date()
             let result = try await getSdkInstance()?.signTransaction(txId: transactionId)
             print("Measure - signTransaction \(Date().timeIntervalSince(startDate))")
-
             return result?.transactionSignatureStatus == .COMPLETED
         } catch let err as FireblocksError {
             AppLoggerManager.shared.logger()?.log("FireblocksManager, signTransaction() failed: \(err.description).")
