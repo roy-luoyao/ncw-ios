@@ -339,7 +339,7 @@ class SessionManager: ObservableObject {
                     newDict["walletId"] = walletId
                 }
                 if deviceId.count > 0 {
-                    newDict["deviceId"] = walletId
+                    newDict["device"] = deviceId
                 }
                 nbody = newDict
             }
