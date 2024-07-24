@@ -221,6 +221,7 @@ class SessionManager: ObservableObject {
         var url: String {
             switch self {
             case .login:
+//                return EnvironmentConstants.baseURL + "/api/login"
                 return EnvironmentConstants.baseURL + "/api/user/login"
             case .devices:
                 return EnvironmentConstants.baseURL + "/api/devices"
@@ -241,7 +242,7 @@ class SessionManager: ObservableObject {
             case .createAsset(let deviceId, let assetId):
                 return EnvironmentConstants.baseURL + "/api/devices/\(deviceId)/accounts/0/assets/\(assetId)"
             case .getAssets(let deviceId):
-                return EnvironmentConstants.baseURL + "/api/devices/\(deviceId)/accounts/0/assets"
+                return EnvironmentConstants.baseURL + "/api/devices/\(deviceId)/accounts/0/assets/summary"
             case .getSupportedAssets(let deviceId):
                 return EnvironmentConstants.baseURL + "/api/devices/\(deviceId)/accounts/0/assets/supported_assets"
             case .getAssetBalance(let deviceId, let assetId):
@@ -316,6 +317,11 @@ class SessionManager: ObservableObject {
             "Bearer \(currentAccessToken)",
             forHTTPHeaderField: "Authorization"
         )
+        // Will be removed when using Mid-layer
+        request.setValue(
+            "Bearer \(currentAccessToken)",
+            forHTTPHeaderField: "Sub"
+        )
         request.setValue(
             "application/json",
             forHTTPHeaderField: "Content-Type"
@@ -327,20 +333,19 @@ class SessionManager: ObservableObject {
         
         if httpMethod != "GET" {
             var nbody = body == nil ? ["sub": currentAccessToken] : body
-            let walletId = FireblocksManager.shared.getWalletId()
-            let deviceId = FireblocksManager.shared.getDeviceId()
+//            let walletId = FireblocksManager.shared.getWalletId()
+//            let deviceId = FireblocksManager.shared.getDeviceId()
             if let bodyDict = nbody as? [String: Any] {
                 var newDict = bodyDict
-                newDict["sub"] = currentAccessToken
                 if let message {
                     newDict["message"] = message
                 }
-                if walletId.count > 0 {
-                    newDict["walletId"] = walletId
-                }
-                if deviceId.count > 0 {
-                    newDict["device"] = deviceId
-                }
+//                if walletId.count > 0 {
+//                    newDict["walletId"] = walletId
+//                }
+//                if deviceId.count > 0 {
+//                    newDict["device"] = deviceId
+//                }
                 nbody = newDict
             }
             
