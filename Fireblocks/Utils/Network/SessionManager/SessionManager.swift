@@ -222,7 +222,7 @@ class SessionManager: ObservableObject {
             switch self {
             case .login:
 //                return EnvironmentConstants.baseURL + "/api/login"
-                return EnvironmentConstants.baseURL + "/api/user/login"
+                return EnvironmentConstants.baseURL + "/api/login"
             case .devices:
                 return EnvironmentConstants.baseURL + "/api/devices"
             case .assign(let deviceId):
