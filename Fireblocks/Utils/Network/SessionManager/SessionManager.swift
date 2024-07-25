@@ -7,6 +7,7 @@
 
 import Foundation
 import FireblocksSDK
+import UIKit
 
 struct GetDevicesResponse: Codable {
     var devices: [FireblocksDevice] = []
@@ -221,7 +222,6 @@ class SessionManager: ObservableObject {
         var url: String {
             switch self {
             case .login:
-//                return EnvironmentConstants.baseURL + "/api/login"
                 return EnvironmentConstants.baseURL + "/api/login"
             case .devices:
                 return EnvironmentConstants.baseURL + "/api/devices"
@@ -313,13 +313,14 @@ class SessionManager: ObservableObject {
     func sendRequest(url: URL, httpMethod: String = "POST", timeout: TimeInterval? = nil, numberOfRetries: Int = 2, message: String? = nil, body: Any? = nil, skipLogs: Bool = false) async throws -> (Data) {
         let currentAccessToken: String = await AuthRepository.getUserIdToken()
         var request = URLRequest(url: url)
+        let UUID = await UIDevice.current.identifierForVendor?.uuidString
         request.setValue(
             "Bearer \(currentAccessToken)",
             forHTTPHeaderField: "Authorization"
         )
         // Will be removed when using Mid-layer
         request.setValue(
-            "Bearer \(currentAccessToken)",
+            UUID,
             forHTTPHeaderField: "Sub"
         )
         request.setValue(
@@ -362,7 +363,7 @@ class SessionManager: ObservableObject {
         AppLoggerManager.shared.logger()?.log("\n📣📣📣📣\nSessionManager send \(httpMethod) request:\n\(request)\n📣📣📣📣")
         do {
             AppLoggerManager.shared.logger()?.log("SessionManager REQUEST \(httpMethod): \(String(describing: request))")
-            print("SessionManager REQUEST: \(String(describing: request))")
+            print("SessionManager \(UUID) REQUEST: \(String(describing: request))")
             let (data, response) = try await session.data(for: request)
             if let statusCode = (response as? HTTPURLResponse)?.statusCode {
                 if statusCode >= 200, statusCode <= 299 {
